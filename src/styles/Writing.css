@@ -1,0 +1,84 @@
+.page {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusted minmax for wider cards */
+  gap: 20px;
+}
+
+.article-card {
+  padding: 20px;
+  border: 1px solid #161616;
+  border-radius: 8px;
+  background-color: #383838;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.article-card:hover {
+  transform: scale(1.05);
+}
+
+.article-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.article-card p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.article-card img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.read-on-medium {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.read-on-medium a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.read-on-medium a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Responsive design for multiple columns */
+@media (min-width: 768px) {
+  .articles {
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjusted minmax for wider cards on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .articles {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjusted minmax for wider cards on large screens */
+  }
+}

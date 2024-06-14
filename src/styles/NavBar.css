@@ -1,0 +1,86 @@
+/* src/styles/NavBar.css */
+.navbar-custom {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #343a40; /* Background color for the navbar */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-headshot {
+  border-radius: 50%;
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  margin-right: 10px;
+}
+
+.navbar-header .navbar-brand {
+  font-size: 1.5em;
+  color: #fff; /* Adjust to your desired text color */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav-custom .nav-link {
+  color: #fff; /* Adjust to your desired text color */
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1em;
+}
+
+.navbar-nav-custom .nav-link:hover {
+  color: #1a73e8; /* Adjust to your desired hover color */
+}
+
+/* src/styles/AIInteraction.css */
+.ai-interaction-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0; /* Remove bottom margin for better alignment in the navbar */
+}
+
+.ai-interaction-form input {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #1a73e8;
+  background-color: #383838;
+  color: #ffffff;
+}
+
+.ai-interaction-form button {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #1a73e8;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ai-interaction-form button:disabled {
+  background-color: #555;
+}
+
+.ai-interaction-form button:hover:enabled {
+  background-color: #0d47a1;
+}
+
+.ai-response {
+  margin-left: 20px; /* Add some margin to the left to separate it from the form */
+  font-size: 1em;
+  color: #ffffff;
+}

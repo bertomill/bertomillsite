@@ -1,0 +1,51 @@
+/* src/styles/AIInteraction.css */
+.ai-interaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh; /* Adjust the height to make it shorter */
+  background-color: #121212;
+  color: #ffffff;
+  padding: 20px; /* Add padding for spacing */
+}
+
+.ai-interaction-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ai-interaction-form input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #1a73e8;
+  width: 300px;
+  background-color: #383838;
+  color: #ffffff;
+}
+
+.ai-interaction-form button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #1a73e8;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ai-interaction-form button:disabled {
+  background-color: #555;
+}
+
+.ai-interaction-form button:hover:enabled {
+  background-color: #0d47a1;
+}
+
+.ai-response {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: center;
+}

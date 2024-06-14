@@ -1,0 +1,24 @@
+/* src/styles/LogoAnimation.css */
+@keyframes scaleUpDown {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Adjust as necessary */
+    height: auto;
+    margin: 20px auto; /* Center the logo horizontally */
+  }
+  
+  .logo-container svg {
+    animation: scaleUpDown 3s infinite;
+  }
+  

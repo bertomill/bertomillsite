@@ -1,0 +1,47 @@
+.slideshow {
+  width: 80%; /* Adjust the width as needed */
+  margin: auto;
+}
+
+.slide {
+  position: relative;
+  padding: 10px; /* Add padding between slides */
+  overflow: hidden; /* Ensure the animation doesn't overflow outside the container */
+}
+
+.slideshow-image {
+  width: 100%;
+  height: 40vh; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensure images scale properly to fit the fixed height */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the image scaling effect */
+}
+
+.slide:hover .slideshow-image {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.image-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent; /* Initial border is transparent */
+  transition: border-color 0.3s ease-in-out; /* Smooth transition for the border color */
+}
+
+.slide:hover::before {
+  border-color: rgba(255, 255, 255, 0.8); /* Border color on hover */
+}

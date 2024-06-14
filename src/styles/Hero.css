@@ -1,0 +1,21 @@
+/* src/styles/Hero.css */
+.hero {
+    height: 300px; /* Adjust the height as needed */
+    background: linear-gradient(135deg, #3a3a3a 0%, #1a1a1a 100%); /* Darker, titanium-like gradient */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .hero-text {
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for better contrast */
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
