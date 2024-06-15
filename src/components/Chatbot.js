@@ -1,4 +1,3 @@
-// src/components/Chatbot.js
 import React, { useEffect } from 'react';
 
 const Chatbot = () => {
