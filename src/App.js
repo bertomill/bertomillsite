@@ -7,6 +7,7 @@ import Writing from './pages/Writing';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import SiftAI from './pages/SiftAI';
+import Chatbot from './components/Chatbot';
 import './styles/App.css';
 
 const App = () => {
@@ -45,6 +46,7 @@ const App = () => {
           <p>{answer}</p>
         </div>
         <Footer />
+        <Chatbot />
       </div>
     </Router>
   );
