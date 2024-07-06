@@ -35,6 +35,8 @@ const App = () => {
           <Route path="/writing" element={<Writing />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        {/* Remove or comment out this block to hide the input field and button */}
+        {/*
         <div>
           <input
             type="text"
@@ -45,6 +47,7 @@ const App = () => {
           <button onClick={handleAskQuestion}>Ask</button>
           <p>{answer}</p>
         </div>
+        */}
         <Footer />
         <Chatbot />
       </div>

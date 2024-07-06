@@ -141,7 +141,7 @@ const MissionStatement = () => {
       <canvas id="sparkCanvas"></canvas>
       <div className="mission-statement">
         <Typewriter
-          words={['Creating innovative solutions for a better world.']}
+          words={['Relentlessly, responsibly, and resiliently innovating for a better tomorrow.']}
           loop={1} // Typing once and stops
           cursor
           cursorStyle='_'
