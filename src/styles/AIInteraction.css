@@ -12,9 +12,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  background-color: transparent; /* Transparent background */
   color: #ffffff;
-  padding: 20px;
   z-index: 10; /* Ensure it's above the 3D scene */
 }
 
@@ -25,43 +24,49 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8); /* Slightly more opaque for better readability */
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly more opaque for better readability */
   padding: 20px;
   border-radius: 8px;
 }
 
-.ai-interaction-form {
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
 }
 
-.ai-interaction-form input {
-  padding: 10px;
-  border-radius: 4px;
+.input-container input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Adjust padding to accommodate the button */
+  border-radius: 20px;
   border: 1px solid #1a73e8;
-  width: 300px;
-  background-color: #383838;
+  background-color: rgba(56, 56, 56, 0.8);
   color: #ffffff;
+  font-size: 1em;
+  outline: none;
+  box-sizing: border-box; /* Ensure padding-right is included in the width */
 }
 
-.ai-interaction-form button {
-  padding: 10px 20px;
-  border-radius: 4px;
+.input-container button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
   border: none;
-  background-color: #1a73e8;
-  color: #ffffff;
   cursor: pointer;
-  transition: background-color 0.3s;
+  color: #1a73e8;
+  font-size: 1.5em;
 }
 
-.ai-interaction-form button:disabled {
-  background-color: #555;
+.input-container button:disabled {
+  color: #555;
 }
 
-.ai-interaction-form button:hover:enabled {
-  background-color: #0d47a1;
+.input-container button:hover:enabled {
+  color: #0d47a1;
 }
 
 .ai-response {
@@ -69,4 +74,8 @@ body {
   font-size: 1.2em;
   text-align: center;
   color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7); /* Background for response */
+  padding: 10px;
+  border-radius: 4px;
+  opacity: 0;
 }
