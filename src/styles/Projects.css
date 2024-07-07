@@ -45,12 +45,10 @@ p {
   text-decoration: underline;
 }
 
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+.project-image {
   width: 100%;
-  max-width: 600px; /* Adjust based on your preference */
+  max-width: 300px; /* Adjust based on your preference */
   height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
