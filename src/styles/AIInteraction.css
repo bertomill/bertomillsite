@@ -1,13 +1,33 @@
 /* src/styles/AIInteraction.css */
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
 .ai-interaction {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height to match the 3D scene */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 30vh; /* Adjust the height to make it shorter */
-  background-color: #121212;
-  color: #802f2f;
-  padding: 20px; /* Add padding for spacing */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: #ffffff;
+  padding: 20px;
+  z-index: 10; /* Ensure it's above the 3D scene */
+}
+
+.chat-box-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly more opaque for better readability */
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .ai-interaction-form {
@@ -48,4 +68,5 @@
   margin-top: 10px;
   font-size: 1.2em;
   text-align: center;
+  color: #ffffff;
 }

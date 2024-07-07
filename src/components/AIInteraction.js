@@ -1,6 +1,6 @@
-// src/components/AIInteraction.js
 import React, { useState } from 'react';
 import axios from 'axios';
+import ThreeDScene from './3DScene';
 import '../styles/AIInteraction.css';
 
 const AIInteraction = () => {
@@ -17,7 +17,6 @@ const AIInteraction = () => {
     setIsLoading(true);
     setResponse('');
 
-    // Debugging line to check if API key is correctly loaded
     console.log('API Key:', process.env.REACT_APP_OPENAI_API_KEY);
 
     try {
@@ -43,19 +42,22 @@ const AIInteraction = () => {
 
   return (
     <div className="ai-interaction">
-      <form onSubmit={handleFormSubmit} className="ai-interaction-form">
-        <input
-          type="text"
-          value={input}
-          onChange={handleInputChange}
-          placeholder="Type your message..."
-          required
-        />
-        <button type="submit" disabled={isLoading}>
-          {isLoading ? 'Talking...' : 'Talk to AI'}
-        </button>
-      </form>
-      {response && <p className="ai-response">{response}</p>}
+      <ThreeDScene />
+      <div className="chat-box-container">
+        <form onSubmit={handleFormSubmit} className="ai-interaction-form">
+          <input
+            type="text"
+            value={input}
+            onChange={handleInputChange}
+            placeholder="Type your message..."
+            required
+          />
+          <button type="submit" disabled={isLoading}>
+            {isLoading ? 'Talking...' : 'Hey'}
+          </button>
+        </form>
+        {response && <p className="ai-response">{response}</p>}
+      </div>
     </div>
   );
 };
