@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .ai-interaction-form input {
@@ -45,7 +45,7 @@
 }
 
 .ai-response {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 1.2em;
   text-align: center;
 }
