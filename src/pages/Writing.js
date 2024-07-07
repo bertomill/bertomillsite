@@ -14,6 +14,7 @@ const Writing = () => {
         const articles = await fetchMediumArticles();
         setArticles(articles);
       } catch (err) {
+        console.error('Error fetching articles in Writing component:', err);
         setError(err.message);
       }
     };
@@ -32,7 +33,6 @@ const Writing = () => {
   return (
     <div className="page">
       <h1>Writing</h1>
-      <p>Here are some of my articles...</p>
       {error && <p className="error">{error}</p>}
       <div className="articles">
         {articles.map((article, index) => (

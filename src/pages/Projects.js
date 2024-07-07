@@ -15,7 +15,6 @@ const projects = [
 const Projects = () => (
   <div className="page">
     <h1>Projects</h1>
-    <p>Here are some of the projects I've worked on...</p>
     
     <div className="project-list">
       {projects.map((project, index) => (

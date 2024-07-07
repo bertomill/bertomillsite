@@ -49,7 +49,6 @@ const App = () => {
         </div>
         */}
         <Footer />
-        <Chatbot />
       </div>
     </Router>
   );
