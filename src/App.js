@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
@@ -10,19 +10,6 @@ import SiftAI from './pages/SiftAI';
 import './styles/App.css';
 
 const App = () => {
-  const [question, setQuestion] = useState('');
-  const [answer, setAnswer] = useState('');
-
-  const handleAskQuestion = async () => {
-    const response = await fetch('https://your-vercel-backend-url.vercel.app/api/ask', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ question }),
-    });
-    const data = await response.json();
-    setAnswer(data.answer);
-  };
-
   return (
     <Router>
       <div className="App">
@@ -34,19 +21,6 @@ const App = () => {
           <Route path="/writing" element={<Writing />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        {/* Remove or comment out this block to hide the input field and button */}
-        {/*
-        <div>
-          <input
-            type="text"
-            value={question}
-            onChange={(e) => setQuestion(e.target.value)}
-            placeholder="Ask me anything"
-          />
-          <button onClick={handleAskQuestion}>Ask</button>
-          <p>{answer}</p>
-        </div>
-        */}
         <Footer />
       </div>
     </Router>
