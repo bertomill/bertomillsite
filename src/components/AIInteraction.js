@@ -6,7 +6,7 @@ import '../styles/AIInteraction.css';
 
 const AIInteraction = () => {
   const [input, setInput] = useState('');
-  const [response, setResponse] = useState("Hi, I'm Berto's AI. I don't know much about Berto but I can answer some general questions.");
+  const [response, setResponse] = useState("👋 Hi, I'm Berto's AI. What can I do for you today?");
   const [isLoading, setIsLoading] = useState(false);
 
   const questionsAndAnswers = {
@@ -74,6 +74,9 @@ const AIInteraction = () => {
 
   return (
     <div className="ai-interaction">
+      <div className="mission-statement">
+        <p>Relentlessly, responsibly, and resiliently innovating for a better tomorrow.</p>
+      </div>
       <ThreeDScene />
       <div className="chat-box-container">
         <form onSubmit={handleFormSubmit} className="ai-interaction-form">
