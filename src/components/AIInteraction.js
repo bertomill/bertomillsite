@@ -68,7 +68,7 @@ const AIInteraction = () => {
   return (
     <div className="ai-interaction">
       <div className="mission-statement">
-        <p>Responsibly, and resiliently innovating for a better tomorrow.</p>
+        <h3>Responsibe, purposeful, & resilient innovation for a better tomorrow.</h3>
       </div>
       <ThreeDScene />
       <div className="chat-box-container">

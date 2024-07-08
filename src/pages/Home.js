@@ -7,7 +7,6 @@ import '../styles/Home.css';
 
 const Home = () => (
   <div className="home">
-    <NavBar /> {/* Add NavBar component here */}
     <AIInteraction />
     <About />
   </div>

@@ -6,11 +6,17 @@
 }
 
 html, body {
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden; /* Prevent scroll on body */
 }
 
 .App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-align: center;
 }
 

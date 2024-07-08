@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import blogPosts from '../data/blogPosts.json';
-import '../styles/BlogList.css'; // Update path to styles folder
+import '../styles/BlogList.css';
 
 const BlogList = () => {
   return (

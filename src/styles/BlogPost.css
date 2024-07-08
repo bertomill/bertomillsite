@@ -1,21 +1,29 @@
-/* src/components/BlogPost.css */
+/* src/styles/BlogPost.css */
 .blog-post {
-    margin: 20px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    margin: 20px auto; /* Center align horizontally */
     padding: 20px;
     border-radius: 5px;
+    max-width: 800px; /* Set max width for readability */
+    overflow: hidden; /* Ensure content doesn't overflow */
   }
   
   .blog-post h1 {
     font-size: 2em;
+    color: #fff; /* White text color for heading */
+    text-align: center; /* Center align heading */
   }
   
   .blog-post h2 {
     font-size: 1.5em;
-    color: #555;
+    color: #aaa; /* Light grey color for subheading */
+    text-align: center; /* Center align subheading */
   }
   
   .blog-post p {
     line-height: 1.6;
+    color: #ddd; /* Light grey color for paragraph text */
   }
   
   .blog-post img {
@@ -26,11 +34,12 @@
   .blog-post .layout-image-left {
     display: flex;
     align-items: center;
+    flex-direction: column; /* Ensure images stack vertically */
   }
   
   .blog-post .layout-image-left img {
-    margin-right: 20px;
-    width: 30%;
+    margin-bottom: 20px;
+    width: 100%;
   }
   
   .blog-post .video-container {
