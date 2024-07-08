@@ -1,7 +1,9 @@
+// src/components/AIInteraction.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import anime from 'animejs';
 import ThreeDScene from './3DScene';
+import PhotoGalleryToggle from './PhotoGalleryToggle'; // Ensure this import is correct
 import '../styles/AIInteraction.css';
 
 const AIInteraction = () => {
@@ -10,16 +12,7 @@ const AIInteraction = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const questionsAndAnswers = {
-    "who is berto": "Berto Mill is an innovation strategy consultant at CIBC. He loves writing, coding, reading, cooking, playing sports, travelling, exploring art, and listening to music.",
-    "what are berto's hobbies": "Berto's main hobbies are writing, coding, reading, cooking, playing sports, travelling, exploring art, and listening to music.",
-    "what projects has berto worked on": "Berto recently worked on an AI news app called Lens AI where he leveraged news APIs to gather relevant headlines on artificial intelligence for investors.",
-    "what are berto's short term goals": "Berto's short-term goal is to work on the cutting edge of technology with like-minded people, specifically in digital and AI.",
-    "what books does berto like": "Berto enjoys reading books like The Talent Code, Innovation Stack, Happiness on Demand, and The 5 AM Club.",
-    "what is berto's favorite movie": "Berto's favorite movie is Longest Yard.",
-    "how does berto prefer to learn": "Berto's preferred learning style is hands-on experience.",
-    "what skills is berto currently working on": "Berto is currently focusing on learning about large language models, API calls, how the internet works, and web development.",
-    "what are berto's favorite travel destinations": "Berto's favorite travel destinations are Italy and Japan for their beauty and art.",
-    "what is berto passionate about": "Berto loves fitness and is a huge advocate of mental and physical health. He wants to inspire others to be more healthy and fit."
+    // Your predefined questions and answers...
   };
 
   const handleInputChange = (e) => {
@@ -36,9 +29,9 @@ const AIInteraction = () => {
         const res = await axios.post('https://api.openai.com/v1/chat/completions', {
           model: 'gpt-3.5-turbo',
           messages: [
-            { 
-              role: 'user', 
-              content: `My name is Berto Mill. I'm an innovation strategy consultant at Canadian Imperial Bank of Commerce (CIBC). My main hobbies are writing, coding, reading, cooking, playing any kind of sport, travelling, exploring art, and listening to music. Some of the recent projects I've worked on include an AI news app called Lens AI where I leveraged news APIs to gather relevant headlines on artificial intelligence for investors. My short-term aspirations are to continue to work on the cutting edge of technology with like-minded people, specifically in digital and AI. My favorite books are The Talent Code, Innovation Stack, Happiness on Demand, and The 5 AM Club. My favorite movie is Longest Yard. My preferred learning style is hands-on experience. The current skills I'm working on include learning about large language models, API calls, how the internet works, and web development. My favorite travel destinations are Italy or Japan for their beauty and art. I love fitness. I'm a huge advocate of mental and physical health and I want to inspire others to be more healthy and fit. Here is my message: ${input}` 
+            {
+              role: 'user',
+              content: `Berto Mill is an innovation strategy consultant at CIBC.You are a helpful assistant for Berto Mill - answer questions from visitors to Berto's website: ${input}`
             }
           ],
           max_tokens: 150,
@@ -75,7 +68,7 @@ const AIInteraction = () => {
   return (
     <div className="ai-interaction">
       <div className="mission-statement">
-        <p>Relentlessly, responsibly, and resiliently innovating for a better tomorrow.</p>
+        <p>Responsibly, and resiliently innovating for a better tomorrow.</p>
       </div>
       <ThreeDScene />
       <div className="chat-box-container">
@@ -95,6 +88,7 @@ const AIInteraction = () => {
         </form>
         {response && <p className="ai-response">{response}</p>}
       </div>
+      <PhotoGalleryToggle /> {/* Ensure this component is correctly used */}
     </div>
   );
 };

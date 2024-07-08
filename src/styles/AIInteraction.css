@@ -44,14 +44,14 @@ body {
 .input-container {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px; /* Increase max-width for a wider text box */
   display: flex;
   align-items: center;
 }
 
 .input-container input {
   width: 100%;
-  padding: 10px 40px 10px 10px; /* Adjust padding to accommodate the button */
+  padding: 10px 50px 5px 15px; /* Adjust padding to accommodate the button */
   border-radius: 20px;
   border: 1px solid #1a73e8;
   background-color: rgba(56, 56, 56, 0.8);
@@ -63,14 +63,15 @@ body {
 
 .input-container button {
   position: absolute;
-  right: 10px;
+  right: 0px; /* Adjust to align the button to the right */
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
   cursor: pointer;
   color: #1a73e8;
-  font-size: 1.5em;
+  font-size: 1.5em; /* Adjust to ensure the button fits properly */
+  height: 100%; /* Ensure the button is the same height as the input */
 }
 
 .input-container button:disabled {
@@ -90,4 +91,21 @@ body {
   padding: 10px;
   border-radius: 4px;
   opacity: 0;
+}
+
+.photo-gallery-toggle {
+  text-align: center;
+  margin: 20px;
+}
+
+.photo-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  margin: 10px;
+}
+
+.photo-icon:hover {
+  transform: scale(1.2);
 }

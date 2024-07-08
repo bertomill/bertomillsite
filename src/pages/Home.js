@@ -1,17 +1,15 @@
 // src/pages/Home.js
 import React from 'react';
+import NavBar from '../components/NavBar'; // Ensure this import is correct
 import About from '../components/About';
-import MissionStatement from '../components/MissionStatement';
-import Slides from '../components/Slides';
 import AIInteraction from '../components/AIInteraction';
 import '../styles/Home.css';
 
 const Home = () => (
-  <div>
-    <AIInteraction /> {/* Add the AI Interaction component */}
-    <MissionStatement />
+  <div className="home">
+    <NavBar /> {/* Add NavBar component here */}
+    <AIInteraction />
     <About />
-    <Slides />
   </div>
 );
 
