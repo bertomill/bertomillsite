@@ -1,4 +1,3 @@
-/* src/styles/Writing.css */
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +7,13 @@
 html, body {
   width: 100%;
   height: 100%;
+  overflow: auto; /* Ensure the body can scroll */
 }
+
 .page {
   padding: 20px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 
 h1 {
@@ -38,7 +39,7 @@ p {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.8); /* Darker background color */
+  background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
@@ -102,4 +103,37 @@ p {
   .articles {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90%;
+  overflow-y: auto; /* Ensure modal content can scroll */
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  font-size: 1.5em;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
 }

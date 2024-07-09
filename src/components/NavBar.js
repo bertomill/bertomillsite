@@ -21,7 +21,6 @@ const NavBar = () => {
           <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
           <Nav.Link as={Link} to="/writing">Writing</Nav.Link>
           <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-          <Nav.Link as={Link} to="/blog">Blog</Nav.Link> {/* New Blog Link */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -1,0 +1,52 @@
+/* src/styles/ArticleView.css */
+.article-view {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #f5f5f5; /* Light text color for dark background */
+  }
+  
+  .article-view h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .article-view p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .article-content {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #f5f5f5; /* Light text color for dark background */
+  }
+  
+  .article-view img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .read-on-medium {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .read-on-medium a {
+    color: #99ffe2;
+    text-decoration: none;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark, semi-transparent background */
+    padding: 10px 10px;
+    border-radius: 5px;
+  }
+  
+  .read-on-medium a:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly darker on hover */
+  }
+  

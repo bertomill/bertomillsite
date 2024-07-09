@@ -8,8 +8,7 @@ import Writing from './pages/Writing';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import SiftAI from './pages/SiftAI';
-import BlogList from './pages/BlogList';
-import BlogPost from './components/BlogPost';
+import ArticleView from './pages/ArticleView';
 import './styles/App.css';
 
 const App = () => {
@@ -23,9 +22,8 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/sift-ai" element={<SiftAI />} />
             <Route path="/writing" element={<Writing />} />
+            <Route path="/writing/:articleId" element={<ArticleView />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/blog" element={<BlogList />} />
-            <Route path="/post/:postId" element={<BlogPost />} />
           </Routes>
         </main>
         <Footer />

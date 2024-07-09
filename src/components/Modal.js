@@ -1,5 +1,5 @@
-// src/components/Modal.js
 import React from 'react';
+import '../styles/Modal.css';
 
 const Modal = ({ isOpen, onClose, article }) => {
   if (!isOpen) return null;
@@ -10,7 +10,7 @@ const Modal = ({ isOpen, onClose, article }) => {
         <button className="close-button" onClick={onClose}>&times;</button>
         <h2>{article.title}</h2>
         <p>{new Date(article.pubDate).toLocaleDateString()}</p>
-        <p dangerouslySetInnerHTML={{ __html: article.content }}></p>
+        <p dangerouslySetInnerHTML={{ __html: article.fullDescription }}></p>
         <div className="read-on-medium">
           <a href={article.link} target="_blank" rel="noopener noreferrer">Read on Medium</a>
         </div>

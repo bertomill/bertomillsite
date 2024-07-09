@@ -1,4 +1,6 @@
+// src/pages/Writing.js
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Writing.css';
 import { fetchMediumArticles } from '../utils/fetchMediumArticles';
 import Modal from '../components/Modal';
@@ -36,14 +38,14 @@ const Writing = () => {
       {error && <p className="error">{error}</p>}
       <div className="articles">
         {articles.map((article, index) => (
-          <div key={index} className="article-card" onClick={() => handleCardClick(article)}>
+          <Link key={index} to={`/writing/${index}`} className="article-card">
             <h2>{article.title}</h2>
             <p>{new Date(article.pubDate).toLocaleDateString()}</p>
             <p dangerouslySetInnerHTML={{ __html: article.description }}></p>
             <div className="read-on-medium">
               <a href={article.link} target="_blank" rel="noopener noreferrer">Read on Medium</a>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       {selectedArticle && (
