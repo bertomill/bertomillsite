@@ -24,10 +24,6 @@ const Writing = () => {
     fetchArticles();
   }, []);
 
-  const handleCardClick = (article) => {
-    setSelectedArticle(article);
-  };
-
   const closeModal = () => {
     setSelectedArticle(null);
   };
