@@ -1,0 +1,25 @@
+/* src/styles/BitesOfInnovation.css */
+.bites-of-innovation {
+    padding: 20px;
+  }
+  
+  .bites-of-innovation h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .video {
+    width: 300px;
+    margin: 10px;
+  }
+  
+  .video iframe {
+    width: 100%;
+    height: 200px;
+  }
+  

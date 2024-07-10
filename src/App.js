@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import SiftAI from './pages/SiftAI';
 import ArticleView from './pages/ArticleView';
+import BitesOfInnovation from './pages/BitesOfInnovation';
 import './styles/App.css';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/sift-ai" element={<SiftAI />} />
+            <Route path="/projects/bites-of-innovation" element={<BitesOfInnovation />} />
             <Route path="/writing" element={<Writing />} />
             <Route path="/writing/:articleId" element={<ArticleView />} />
             <Route path="/contact" element={<Contact />} />
