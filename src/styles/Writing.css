@@ -27,6 +27,14 @@ p {
   margin-bottom: 10px;
 }
 
+.description {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background color */
+  color: #ffffff; /* White text color */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 .articles {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
