@@ -30,7 +30,7 @@ const Writing = () => {
 
   return (
     <div className="page">
-      <h1>Writing</h1>
+      <h1>My articles</h1>
       <p className="description">
         Staying on the cutting edge of technology and industry trends. Our mission is to keep professionals like you informed with the latest news, data, and updates that matter. Whether you're a tech enthusiast, an industry leader, or a forward-thinking professional, our content is designed to provide you with the insights and information you need to stay ahead in today's fast-paced world. Join us as we explore the innovations and developments shaping the future, and empower yourself with the knowledge to thrive in your field.
       </p>
