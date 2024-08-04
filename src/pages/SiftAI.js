@@ -4,7 +4,7 @@ import '../styles/ProjectDetails.css';
 
 const SiftAI = () => (
   <div className="project-details">
-    <h2>Sift AI</h2>
+    <h2>Sift AI Web Application</h2>
     <section>
       <h3>Overview</h3>
       <p>Sift AI is a web application that provides insights, analysis, and data exclusively on AI topics. It tracks how major global banks are using AI and includes news, earnings calls, annual reports, data analysis on the AI landscape, regulatory updates, and research institute updates on AI.</p>
