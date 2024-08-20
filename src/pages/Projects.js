@@ -10,7 +10,12 @@ const projects = [
     link: 'https://ainews-beta.vercel.app/',
     image: '/assets/img/AI Lens.png' // Add the image URL here
   },
-  // Add more projects here as needed
+  {
+    title: 'BankToken',
+    description: 'Ai news and research app for AI in banking.',
+    link: 'https://bank-token-1zw7pl29m-bertmill19s-projects.vercel.app/',
+    image: '/assets/img/BankToken.png' // Add the image URL here
+  },
 ];
 
 const Projects = () => (
